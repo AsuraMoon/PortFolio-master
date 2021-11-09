@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    padding-bottom: 3rem;
+    background-color: #dadada;
+}
+    
+
+*{
+
+    color: rgb(29, 29, 29)!important;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
+
+
+
+#jeu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 300px;
+    margin: auto;
+}
+
+.case{
+    border: 1px solid black;
+    height: 100px;
+    line-height: 100px;
+    font-size: 60px;
+}

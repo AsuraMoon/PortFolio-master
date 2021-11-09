@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Voici mes projets d'école!{% endblock %}
+
+{% block stylesheets %}
+        <link rel="stylesheet" href="{{asset("styles/school.css")}}">
+{% endblock %}
+
+{% block body %}
+        <div class="container mt-5 d-flex justify-content-center">
+                <h1> FrontEnd <h1>
+        </div>
+        <div class="container mt-4 d-flex justify-content-around">
+                <div class="card corner sizecard">
+                        <img class="card-img-top corner" src="{{asset("styles/assets/td3.png")}}" alt="Card image cap">
+                        <div class="card-body">
+                                <h5 class="card-title">Flex</h5>
+                                <p class="card-text">Entrainement aux flex / wrap</p>
+                                <a href="{{ path('td1') }}" class="btn btn-primary">Voir le site</a>
+                        </div>
+                </div>
+                <div class="card corner sizecard">
+                        <img class="card-img-top corner" src="{{asset("styles/assets/td2.png")}}" alt="Card image cap">
+                        <div class="card-body">
+                                <h5 class="card-title">Grid</h5>
+                                <p class="card-text">Entrainement aux grids</p>
+                                <a href="{{ path('td2') }}" class="btn btn-primary">Voir le site</a>
+                        </div>
+                </div>
+                
+                <div class="card corner sizecard">
+                        <img class="card-img-top corner" src="{{asset("styles/assets/secu.png")}}" alt="Card image cap">
+                        <div class="card-body">
+                                <h5 class="card-title">Sécuritask</h5>
+                                <p class="card-text">Site pédagogique en Vue.JS</p>
+                                <a href="https://securitask-13104.web.app/#/" class="btn btn-primary">Voir le site</a>
+                        </div>
+                </div>
+        </div>
+        <div class="container mt-5 d-flex justify-content-center">
+                <h1> BackEnd <h1>
+        </div>
+        <div class="container mt-4 d-flex justify-content-around">
+                <div class="card corner sizecard">
+                        <img class="card-img-top corner" src="{{asset("styles/assets/td3.png")}}" alt="Card image cap">
+                        <div class="card-body">
+                                <h5 class="card-title">ProFun</h5>
+                                <p class="card-text">Mon Projet de fin D'année</p>
+                                <a href="{{ path('javascript') }}" class="btn btn-primary">Voir le site</a>
+                        </div>
+                </div>
+                <div class="card corner sizecard">
+                        <img class="card-img-top corner" src="{{asset("styles/assets/secu.png")}}" alt="Card image cap">
+                        <div class="card-body">
+                                <h5 class="card-title">Site Ecom</h5>
+                                <p class="card-text">Site Ecommerce (Sans Paiment)</p>
+                                <a href="https://securitask-13104.web.app/#/" class="btn btn-primary">Voir le site</a>
+                        </div>
+                </div>
+                
+        </div>
+{% endblock %}
+

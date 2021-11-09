@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon TD sur les Flex{% endblock %}
+
+{% block stylesheets %}
+        <link rel="stylesheet" href="{{asset("styles/td1.css")}}">
+{% endblock %}
+
+{% block body %}
+    <header class="mt-5"> 
+      <h2 id="Titre">
+        Reliable, efficient delivery
+      </h2>
+      <h1 id="Surtitre">
+        Powered by Technology
+      </h1>
+      <p>
+      Our Artificial Intelligence powered tools use millions of project data
+      points to ensure that your porject is successful
+      </p>
+    </header>
+<!--Première carte-->
+    <main>
+      <div class="carte" id="Supervisor">
+        <strong>
+        Supervisor
+        </strong>
+        <p>
+        Monitors activity to identify project
+        roadblocks
+        </p>
+        <img alt="Image Suppervisor" src="{{asset("styles/assets/icon-supervisor.svg")}}">
+      </div>
+<!--Deuxième carte--> 
+      <div class="Mid">
+        <div class="carte" id="TeamBuilder">
+          <strong>
+          Team Builder
+          </strong>
+          <p>
+          Scans our talent network to create the
+          optimal teaml for your project
+          </p>
+          <img alt="Image TeamBuilder" src="{{asset("styles/assets/icon-team-builder.svg")}}">
+        </div>
+<!--Troisième carte-->
+        <div class="carte" id="Karma">
+          <strong>
+          Karma
+          </strong>
+          <p>
+          Regularly evaluates our talent to
+          ensure quality
+          </p>
+          <img alt="Image Karma" src="{{asset("styles/assets/icon-karma.svg")}}"> 
+        </div>
+      </div>
+<!--Quatrième carte-->
+      <div class="carte" id="Calculator">   
+        <strong>
+        Calculator
+        </strong>
+        <p>
+        Uses data from past project to
+        provide better delivery estimates
+        </p>    
+        <img alt="Image Calculator" src="{{asset("styles/assets/icon-calculator.svg")}}">
+      </div>
+    </main>
+{% endblock %}

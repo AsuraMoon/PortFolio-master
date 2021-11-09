@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <html lang="fr">
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="shortcut icon" href="{{asset("styles/assets/favicon.ico")}}" type="image/x-icon">
+        <link href="{{asset("styles/bootstrap.min.css")}}" rel="stylesheet">
+
+        {% block stylesheets %}
+        {% endblock %}
+
+        {% block javascripts %}
+
+        {% endblock %}
+
+            <nav class="navbar d-flex justify-content-around">
+                <a class="nav-link" href="{{ path('home') }}">Accueil</a>
+                <a class="nav-link" href="{{ path('school') }}">Mes Projets D'école</a>
+                <a class="nav-link" href="{{ path('home') }}">Mes Projets Personnel</a>
+            </nav>
+        {% block body %}
+
+        {% endblock %}
+
+    </body>
+</html>
